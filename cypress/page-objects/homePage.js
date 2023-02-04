@@ -2,7 +2,7 @@ import Urls from "./urlsPage";
 
 const myAccountHeaderButton= '#menu-item-100'
 const blockNameNew='div[data-block-name="woocommerce/product-new"]'
-const checkcartFromProductLevel= '.added_to_cart .wc-forward'
+const checkcartFromProductLevel= 'a[class="added_to_cart"]'
 
 export const Product= {
    HoodieWithZipper: {
