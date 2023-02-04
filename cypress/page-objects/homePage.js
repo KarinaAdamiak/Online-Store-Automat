@@ -4,7 +4,7 @@ const myAccountHeaderButton= '#menu-item-100'
 const blockNameNew='div[data-block-name="woocommerce/product-new"]'
 const checkcartFromProductLevel= '.added_to_cart .wc-forward'
 
-const Product= {
+export const Product= {
    HoodieWithZipper: {
      Locator: 'a[data-product_id="51"]',
      Name: "Hoodie with Zipper",
