@@ -38,7 +38,7 @@ it('should add product to cart and delete it from there', function() {
     homePage.clickGoToCartFromProductButton()
     cartPage.checkThatAddedProductIsInCart()
     cartPage.removeItemFromCart()
-    cartPage.che
+    cartPage.checkThatCartIsEmpty()
 
 
     })})
