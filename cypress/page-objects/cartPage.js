@@ -3,7 +3,7 @@ import { Product } from "./homePage";
 
 const productName= '.product-name'
 const removeItemButton='.remove'
-const emptyCartAlert= '.cart-empty .woocommerce-info'
+const emptyCartAlert= '.cart-empty.woocommerce-info'
 
 
 
