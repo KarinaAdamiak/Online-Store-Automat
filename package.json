@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KarinaAdamiak/Online-Store-Automat#readme",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "cypress": "^12.5.1"
   }
 }
