@@ -1,6 +1,6 @@
 import HomePage from "../page-objects/homePage";
 import MyAccount from "../page-objects/myAccountPage";
-import { faker } from '@faker-js/faker';
+import {faker} from '@faker-js/faker';
 
 
 describe('login on user account',()=>{
