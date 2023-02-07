@@ -2,7 +2,7 @@ import Urls from "./urlsPage";
 
 const myAccountHeaderButton= '#menu-item-100'
 const blockNameNew='div[data-block-name="woocommerce/product-new"]'
-const checkcartFromProductLevel= 'a[class="added_to_cart"]'
+const checkcartFromProductLevel='.added_to_cart.wc-forward'
 
 export const Product= {
    HoodieWithZipper: {
@@ -30,9 +30,10 @@ addProductToCart(){
     })
 }
 clickGoToCartFromProductButton(){
-        cy.get(blockNameNew).within(()=>{
-            cy.get(checkcartFromProductLevel).click()
-    
+        cy.get(blockNameNew).within(()=>
+        {
+            
+       cy.get(checkcartFromProductLevel).click()
         })
 }
 visitPage(){
