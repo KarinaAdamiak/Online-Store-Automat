@@ -14,12 +14,12 @@ class OrderPage{
     fillAllRequiredFields(){
         cy.get(firstNameField).type(faker.name.firstName())
         cy.get(lastNameField).type(faker.name.lastName())
-        cy.get(countryDropdown).select(countryDropdownPoland)
+        cy.get(countryDropdown).select(countryDropdownPoland, {force:true})
         cy.get(addressField).type(faker.address.streetAddress())
         cy.get(zipCodeField).type(faker.address.zipCode('##-###'))
         cy.get(cityField).type(faker.address.city())
         cy.get(phoneField).type(faker.phone.number('+48#########'))
-        cy.get(emailField).type(faker.internet.email)
+        cy.get(emailField).type(faker.internet.email())
         
     }    
     clickOrderFinishButton(){
