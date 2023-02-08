@@ -10,6 +10,8 @@ const emailField='#billing_email'
 const finishOrderButton='#place_order'
 const countryDropdown='#billing_country'
 const countryDropdownPoland='Polska'
+
+const stillToPay= '.cart-contents'
 class OrderPage{
     fillAllRequiredFields(){
         cy.get(firstNameField).type(faker.name.firstName())
@@ -26,7 +28,8 @@ class OrderPage{
         cy.get(finishOrderButton).click()
    }   
    checkOrderFinish(){
-        cy.contains('Zamówienie otrzymane',{timeout:10000}).should('exist')
+        cy.contains('Zamówienie otrzymane',{timeout:30000}).should('exist')
+        cy.get(stillToPay).contains('0,00')
 
     }
 
