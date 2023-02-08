@@ -24,15 +24,12 @@ clickMyAccountButton(){
     cy.get(myAccountHeaderButton).click()
 }
 addProductToCart(){
-    cy.get(blockNameNew).within(()=>
-    {
-        cy.get(Product.HoodieWithZipper.Locator)
+    cy.get(blockNameNew).within(()=>{
+        cy.get(Product.HoodieWithZipper.Locator).click()
     })
 }
 clickGoToCartFromProductButton(){
-        cy.get(blockNameNew).within(()=>
-        {
-            
+        cy.get(blockNameNew).within(()=>{    
        cy.get(checkcartFromProductLevel).click()
         })
 }
