@@ -1,0 +1,10 @@
+{
+    "Locator": "a[data-product_id='51']",
+    "Name": "Hoodie with Zipper",
+
+   "Locator1": "a[data-product_id='53']" ,
+   "Name1": "Polo",
+
+   "Locator2": "a[data-product_id='49']",
+   "Name2": "Sunglasses"
+}
