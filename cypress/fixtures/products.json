@@ -1,10 +1,10 @@
 {
-    "Locator": "a[data-product_id='51']",
-    "Name": "Hoodie with Zipper",
+    "locator": "a[data-product_id='51']",
+     "name": "Hoodie with Zipper",
 
-   "Locator1": "a[data-product_id='53']" ,
-   "Name1": "Polo",
+   "locator1": "a[data-product_id='53']" ,
+    "name1": "Polo",
 
-   "Locator2": "a[data-product_id='49']",
-   "Name2": "Sunglasses"
+   "locator2": "a[data-product_id='49']",
+    "name2": "Sunglasses"
 }

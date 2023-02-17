@@ -27,6 +27,7 @@ addProductToCart(){
     cy.get(blockNameNew).within(()=>{
         cy.get(Product.HoodieWithZipper.Locator).click()
     })
+    
 }
 clickGoToCartFromProductButton(){
         cy.get(blockNameNew).within(()=>{    
