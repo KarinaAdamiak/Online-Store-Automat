@@ -1,19 +1,10 @@
 import HomeFixPage from "../page-objects/homeFixPage";
 import MyAccount from "../page-objects/myAccountPage";
-import {faker} from '@faker-js/faker';
-import CartPage from "../page-objects/cartPage";
 import CartFixPage from "../page-objects/cartFixPage";
 
 
 describe('login on user account',()=>{
 
-    // before(function(){
-    //     cy.fixture('products').then(function(data){
-    //        this.data= data
-
-    //     })
-
-    // })
 const homeFixPage= new HomeFixPage();
 const accountPage= new MyAccount();
 const cartFixPage=new CartFixPage()
