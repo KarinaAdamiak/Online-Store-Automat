@@ -11,21 +11,5 @@ workflows:
             store_artifacts: true
             parallel: true
             parallelism: 2
-            steps:
-                - checkout
-                - node/install-packages:
-                pkg-manager: yarn
-                - run: mkdir ~/junit
-                - run:
-                    name: Test application
-                command: |
-                    TEST=$(circleci tests glob "src/__tests__/*.js" | circleci tests 
-split --split-by=timings)
-                    yarn test $TEST
-            - run:
-                command: cp junit.xml ~/junit/
-                when: always
-            - store_test_results:
-                path: ~/junit
             group: 2 machines
 
