@@ -5,6 +5,7 @@ workflows:
   build:
     jobs:
         - cypress/install
+    jobs:    
         - cypress/run:
           name: "TS1"
           install-command: npm i
