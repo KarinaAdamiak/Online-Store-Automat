@@ -10,6 +10,8 @@ workflows:
             - cypress/install
             store_artifacts: true
             parallel: true
-            parallelism: 3
+            parallelism: 2
+            steps:
+              - run: go test -v $(go list ./... | circleci tests split --split-by=timings)
             group: 2 machines
 
