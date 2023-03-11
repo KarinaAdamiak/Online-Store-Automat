@@ -13,6 +13,10 @@ workflows:
             name: "TS2"
             install-command: npm i
             spec: cypress/e2e/TS2.cy.js
+        - cypress/run:
+            name: "TS3"
+            install-command: npm i
+            spec: cypress/e2e/TS3.cy.js    
             requires:
             - cypress/install
             store_artifacts: true
